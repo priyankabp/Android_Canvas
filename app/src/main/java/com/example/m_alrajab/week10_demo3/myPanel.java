@@ -3,17 +3,41 @@ package com.example.m_alrajab.week10_demo3;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 
 /**
  * Created by m_alrajab on 3/28/16.
  */
-public class myPanel extends View {
+public class MyPanel extends View {
 
     Paint paint=new Paint();
 
-    public myPanel(Context context) {
-        super(context);
+    public MyPanel(Context context, AttributeSet set) {
+        super(context, set);
+
+        setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        SharedValuesXY.endX=SharedValuesXY.startX=event.getX();
+                        SharedValuesXY.endY=SharedValuesXY.startY=event.getY();
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        SharedValuesXY.endX=event.getX();
+                        SharedValuesXY.endY=event.getY();
+                        break;
+                    default:
+                }
+
+
+
+
+                return true;
+            }
+        });
     }
 
     @Override
