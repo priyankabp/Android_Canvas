@@ -17,4 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void setRect(View view) {
+        SharedValuesXY.drawingMode="RECT";
+    }
+    public void setOval(View view) {
+        SharedValuesXY.drawingMode="OVAL";
+    }
 }

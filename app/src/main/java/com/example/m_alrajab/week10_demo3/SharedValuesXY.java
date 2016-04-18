@@ -9,5 +9,6 @@ public class SharedValuesXY {
     public static  float startY=0;
     public static  float endX=0;
     public static  float endY=0;
+    public static String drawingMode="RECT";
 
 }

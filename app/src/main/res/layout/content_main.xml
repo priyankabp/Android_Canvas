@@ -23,13 +23,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rect"
-            android:id="@+id/rectBtn" />
+            android:id="@+id/rectBtn"
+            android:onClick="setRect"
+            />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Oval"
-            android:id="@+id/ovalBtn" />
+            android:id="@+id/ovalBtn"
+            android:onClick="setOval"
+            />
 
         <Button
             android:layout_width="wrap_content"
