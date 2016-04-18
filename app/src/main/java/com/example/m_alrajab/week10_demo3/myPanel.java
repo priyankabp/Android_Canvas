@@ -64,4 +64,14 @@ public class MyPanel extends View {
         invalidate();
 
     }
+
+    public int getWidth(Canvas canvas)
+    {
+        return canvas.getWidth();
+    }
+
+    public int getHeight(Canvas canvas)
+    {
+        return canvas.getHeight();
+    }
 }

@@ -45,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void setRect(View view) {
         SharedValuesXY.drawingMode="RECT";
+        String description;
+        description = (String) findViewById(R.id.Btn1).getContentDescription();
+        //I found getContentDescription by typing "get" after the button and then looking through the suggestions.
+        Toast.makeText(MainActivity.this, description, Toast.LENGTH_SHORT).show();
     }
     public void setOval(View view) {
         SharedValuesXY.drawingMode="OVAL";
@@ -60,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             if (event.getAction()==DragEvent.ACTION_DROP)
             {
                 ((Button) view).setBackground( ((Button) event.getLocalState()).getBackground());
+                ((Button) view).setContentDescription( ((Button) event.getLocalState()).getContentDescription());
             }
 
             return true;
