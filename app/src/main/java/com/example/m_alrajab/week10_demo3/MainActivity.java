@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             if (event.getAction()==DragEvent.ACTION_DROP)
             {
                 ((Button) view).setText( ((Button) event.getLocalState()).getText());
+                ((Button) view).setBackground( ((Button) event.getLocalState()).getBackground());
             }
 
             return true;
