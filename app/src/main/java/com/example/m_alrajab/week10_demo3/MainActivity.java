@@ -30,9 +30,15 @@ public class MainActivity extends AppCompatActivity {
         rectBtn=(Button) findViewById(R.id.rectBtn);
         findViewById(R.id.rectBtn).setOnLongClickListener(myStartDraggingLsnr);
         findViewById(R.id.ovalBtn).setOnLongClickListener(myStartDraggingLsnr);
+        findViewById(R.id.upBtn).setOnLongClickListener(myStartDraggingLsnr);
+        findViewById(R.id.downBtn).setOnLongClickListener(myStartDraggingLsnr);
+        findViewById(R.id.leftBtn).setOnLongClickListener(myStartDraggingLsnr);
+        findViewById(R.id.rightBtn).setOnLongClickListener(myStartDraggingLsnr);
 
         findViewById(R.id.Btn1).setOnDragListener(myEndDraggingLsntr);
         findViewById(R.id.Btn2).setOnDragListener(myEndDraggingLsntr);
+        findViewById(R.id.Btn3).setOnDragListener(myEndDraggingLsntr);
+        findViewById(R.id.Btn4).setOnDragListener(myEndDraggingLsntr);
 
     }
 
