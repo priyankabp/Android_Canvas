@@ -23,12 +23,7 @@ public class MainActivity extends AppCompatActivity {
         rectBtn=(Button) findViewById(R.id.rectBtn);
         myStartDraggingLsnr=new StartDraggingLsntr();
 
-        rectBtn.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                return false;
-            }
-        });
+        rectBtn.setOnLongClickListener(myStartDraggingLsnr);
 
     }
 
