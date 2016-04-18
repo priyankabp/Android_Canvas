@@ -15,14 +15,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_play_arrow_black_24dp"
-            android:id="@+id/rectBtn"
-            android:onClick="setRect"
-            />
+
 
         <Button
             android:layout_width="0dp"
@@ -46,6 +39,52 @@
             android:layout_height="wrap_content"
             android:text="    "
             android:id="@+id/Btn2" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_upward_black_24dp"
+            android:id="@+id/upBtn"
+            android:onClick="setRect"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_downward_black_24dp"
+            android:id="@+id/downBtn"
+            android:onClick="setRect"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:id="@+id/leftBtn"
+            android:onClick="setRect"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_forward_black_24dp"
+            android:id="@+id/rightBtn"
+            android:onClick="setRect"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_play_arrow_black_24dp"
+            android:id="@+id/rectBtn"
+            android:onClick="setRect"
+            />
+
     </LinearLayout>
     <com.example.m_alrajab.week10_demo3.MyPanel
         android:layout_width="match_parent"
