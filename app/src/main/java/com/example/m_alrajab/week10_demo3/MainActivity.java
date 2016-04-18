@@ -46,7 +46,10 @@ public class MainActivity extends AppCompatActivity {
     public void setRect(View view) {
         SharedValuesXY.drawingMode="RECT";
         String description;
-        description = (String) findViewById(R.id.Btn1).getContentDescription();
+        description = "sequence: " + findViewById(R.id.Btn1).getContentDescription() + ", "
+                + findViewById(R.id.Btn2).getContentDescription() + ", "
+                + findViewById(R.id.Btn3).getContentDescription() + ", "
+                + findViewById(R.id.Btn4).getContentDescription();
         //I found getContentDescription by typing "get" after the button and then looking through the suggestions.
         Toast.makeText(MainActivity.this, description, Toast.LENGTH_SHORT).show();
     }
