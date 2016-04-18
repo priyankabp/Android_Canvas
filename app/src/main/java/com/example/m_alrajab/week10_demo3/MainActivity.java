@@ -1,6 +1,7 @@
 package com.example.m_alrajab.week10_demo3;
 
 import android.content.ClipData;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Point;
 import android.os.Bundle;
@@ -63,9 +64,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Bitmap image;
     private class WithDraggingShadow extends View.DragShadowBuilder{
+        //public WithDraggingShadow(View view, Bitmap draggingPicture){
         public WithDraggingShadow(View view){
             super(view);
+            //image=draggingPicture;
         }
 
         @Override
