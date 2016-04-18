@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private class WithDraggingShadow extends View.DragShadowBuilder{
-        WithDraggingShadow(View view){
+        public WithDraggingShadow(View view){
             super(view);
         }
 
