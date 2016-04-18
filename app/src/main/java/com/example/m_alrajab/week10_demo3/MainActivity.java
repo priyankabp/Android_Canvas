@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.DragEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -14,16 +15,22 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     StartDraggingLsntr myStartDraggingLsnr;
+    EndDraggingLsntr myEndDraggingLsntr;
     Button rectBtn, ovalBtn, btn1, btn2;
     MyPanel panel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        rectBtn=(Button) findViewById(R.id.rectBtn);
-        myStartDraggingLsnr=new StartDraggingLsntr();
 
+        myStartDraggingLsnr=new StartDraggingLsntr();
+        myEndDraggingLsntr=new EndDraggingLsntr();
+
+        rectBtn=(Button) findViewById(R.id.rectBtn);
         rectBtn.setOnLongClickListener(myStartDraggingLsnr);
+
+        findViewById(R.id.Btn1).setOnDragListener(myEndDraggingLsntr);
+        findViewById(R.id.Btn2).setOnDragListener(myEndDraggingLsntr);
 
     }
 
@@ -32,6 +39,18 @@ public class MainActivity extends AppCompatActivity {
     }
     public void setOval(View view) {
         SharedValuesXY.drawingMode="OVAL";
+    }
+
+    private class EndDraggingLsntr implements View.OnDragListener{
+        @Override
+        public boolean onDrag(View view, DragEvent event) {
+            if (event.getAction()==DragEvent.ACTION_DROP)
+            {
+                ((Button) view).setText( ((Button) event.getLocalState()).getText());
+            }
+
+            return true;
+        }
     }
 
     private class StartDraggingLsntr implements View.OnLongClickListener{

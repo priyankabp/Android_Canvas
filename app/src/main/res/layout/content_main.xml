@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="    "
-            android:id="@+id/Btn" />
+            android:id="@+id/Btn1" />
 
         <Button
             android:layout_width="wrap_content"
