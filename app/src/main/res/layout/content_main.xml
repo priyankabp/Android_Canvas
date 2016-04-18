@@ -16,7 +16,8 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_play_arrow_black_24dp"
             android:id="@+id/rectBtn"
@@ -24,7 +25,8 @@
             />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Oval"
             android:id="@+id/ovalBtn"
@@ -32,13 +34,15 @@
             />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="    "
             android:id="@+id/Btn1" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="    "
             android:id="@+id/Btn2" />
