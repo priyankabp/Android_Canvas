@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void setOval(View view) {
         SharedValuesXY.drawingMode="OVAL";
+    }
+
+    public void exit(View view) {
+        Toast.makeText(MainActivity.this, "exit the game", Toast.LENGTH_SHORT).show();
     }
 
     private class EndDraggingLsntr implements View.OnDragListener{

@@ -21,6 +21,15 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:text="Exit"
+            android:id="@+id/exit"
+            android:onClick="exit"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:text="Oval"
             android:id="@+id/ovalBtn"
             android:onClick="setOval"
