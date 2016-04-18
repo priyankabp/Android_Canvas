@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         myEndDraggingLsntr=new EndDraggingLsntr();
 
         rectBtn=(Button) findViewById(R.id.rectBtn);
-        rectBtn.setOnLongClickListener(myStartDraggingLsnr);
+        findViewById(R.id.rectBtn).setOnLongClickListener(myStartDraggingLsnr);
+        findViewById(R.id.ovalBtn).setOnLongClickListener(myStartDraggingLsnr);
 
         findViewById(R.id.Btn1).setOnDragListener(myEndDraggingLsntr);
         findViewById(R.id.Btn2).setOnDragListener(myEndDraggingLsntr);
