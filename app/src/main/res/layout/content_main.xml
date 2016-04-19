@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/ic_arrow_downward_black_24dp"
             android:id="@+id/downBtn"
-            android:onClick="setRect"
+            android:onClick="playMusic"
             android:contentDescription="down"
             />
 
